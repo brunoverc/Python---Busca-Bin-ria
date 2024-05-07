@@ -41,6 +41,43 @@ Para executar a comparação de desempenho entre os algoritmos, execute o notebo
 
 Os resultados obtidos mostram que a busca binária, tanto na sua versão recursiva quanto iterativa, é significativamente mais eficiente do que a busca linear, especialmente em conjuntos de dados maiores e ordenados.
 
+### Complexidade do Algoritmo
+
+- Iterativa:
+
+| Passo                    | Complexidade     | Justificativa                                            |
+|--------------------------|------------------|----------------------------------------------------------|
+| Inicialização            | O(1)             | Operações simples de atribuição e cálculo de índices     |
+| Loop While               | O(log n)         | O número máximo de iterações é logarítmico na quantidade de elementos na lista, devido à divisão pela metade a cada iteração |
+| Condições dentro do Loop | O(1)             | As operações dentro do loop (verificação de índices, comparação de elementos) são de complexidade constante |
+| Total                    | O(log n)         | A complexidade total é dominada pelo loop while, que tem complexidade logarítmica devido à busca binária          |
+
+A complexidade de tempo do algoritmo de busca binária iterativa é O(log n), onde n é o tamanho da lista. Isso ocorre porque a lista é dividida ao meio a cada iteração, reduzindo pela metade o espaço de busca. Isso resulta em um tempo de execução eficiente, especialmente para listas grandes.
+
+- Recursiva:
+
+| Passo                    | Complexidade     | Justificativa                                            |
+|--------------------------|------------------|----------------------------------------------------------|
+| Chamada inicial          | O(1)             | Uma única chamada inicial com parâmetros específicos     |
+| Condição Base da Recursão| O(1)             | Verificação se o índice final é maior ou igual ao inicial |
+| Cálculo do meio          | O(1)             | Cálculo do índice do elemento do meio da lista           |
+| Comparação               | O(1)             | Comparação do elemento do meio com o valor procurado     |
+| Chamada recursiva        | O(log n)         | A cada chamada, a lista é dividida pela metade           |
+| Total                    | O(log n)         | A complexidade total é dominada pela chamada recursiva, que tem complexidade logarítmica devido à busca binária |
+
+A complexidade total do algoritmo é dominada pelas chamadas recursivas, que têm complexidade logarítmica devido à busca binária. Portanto, a complexidade de tempo do algoritmo de busca binária recursiva é O(log n), onde n é o tamanho da lista, o algoritmo de busca binária recursiva é eficiente para encontrar elementos em listas ordenadas devido à sua complexidade logarítmica, que reduz a quantidade de elementos a serem verificados drasticamente a cada chamada recursiva.
+
+- Ordenada:
+
+| Passo                    | Complexidade     | Justificativa                                            |
+|--------------------------|------------------|----------------------------------------------------------|
+| Inicialização da Variável| O(1)             | Operação simples de atribuição                           |
+| Loop While               | O(n)             | O número máximo de iterações é linear na quantidade de elementos na lista |
+| Condições Dentro do Loop | O(1)             | As operações dentro do loop (verificação de igualdade, comparações) são de complexidade constante |
+| Total                    | O(n)             | A complexidade total é dominada pelo loop while, que tem complexidade linear em relação ao tamanho da lista |
+
+A complexidade de tempo do algoritmo de busca sequencial ordenada é dominada pelo loop while, que tem uma complexidade linear, O(n), onde n é o tamanho da lista. Isso ocorre porque o algoritmo precisa percorrer a lista elemento por elemento até encontrar o valor procurado ou determinar que o valor não está na lista.
+
 ## Contribuições
 
 Contribuições e sugestões são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests para melhorar este projeto.
