@@ -100,7 +100,4 @@ T(n) = an
 Sendo a constante, temos:
 T(n) = O(n)
 
-## Contribuições
-
-Contribuições e sugestões são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e enviar pull requests para melhorar este projeto.
 
