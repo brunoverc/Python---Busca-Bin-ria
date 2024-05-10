@@ -76,7 +76,29 @@ A complexidade total do algoritmo é dominada pelas chamadas recursivas, que tê
 | Condições Dentro do Loop | O(1)             | As operações dentro do loop (verificação de igualdade, comparações) são de complexidade constante |
 | Total                    | O(n)             | A complexidade total é dominada pelo loop while, que tem complexidade linear em relação ao tamanho da lista |
 
+## Análise de T(n)
+
 A complexidade de tempo do algoritmo de busca sequencial ordenada é dominada pelo loop while, que tem uma complexidade linear, O(n), onde n é o tamanho da lista. Isso ocorre porque o algoritmo precisa percorrer a lista elemento por elemento até encontrar o valor procurado ou determinar que o valor não está na lista.
+
+Para as funções divide and conquer no método interativo e recursivo a analise de tempo de execução é igual:
+Podemos representar isso em termos de uma série geométrica:
+𝑛, , , , …, 1
+T(n) = aT(n/b) + f(n)
+T(n) = T(n/b)
+T(n) = T(
+Onde x é o número de iterações.
+ 
+### Solução:
+ 
+O(n) =
+ 
+T(n) = O(log(n))
+ 
+Para o método Linear:
+T(n) = an + b
+T(n) = an
+Sendo a constante, temos:
+T(n) = O(n)
 
 ## Contribuições
 
